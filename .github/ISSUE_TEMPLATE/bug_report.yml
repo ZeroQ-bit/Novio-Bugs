@@ -4,7 +4,7 @@ body:
   - type: dropdown
     id: platform
     attributes:
-      label: Platform
+      label: Novio Platform
       description: Select the Novio platform you are using
       options:
         - Apple TV / tvOS
@@ -13,11 +13,23 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: tried_in_external_player
+    attributes:
+      label: Have you tried play this video in external player
+      description: When reporting an issue with video playback, you should first verify if this video plays correctly and without any issues in an external player.
+      options:
+        - "Yes"
+        - "No"
+        - Not a playback issue
+    validations:
+      required: true
+
   - type: textarea
     id: describe_bug
     attributes:
       label: Describe the bug
-      description: A clear and concise description of the bug.
+      description: A clear and concise description of what the bug is.
       placeholder: Describe the issue in detail...
     validations:
       required: true
@@ -25,8 +37,8 @@ body:
   - type: textarea
     id: to_reproduce
     attributes:
-      label: To reproduce
-      description: Steps to reproduce the issue.
+      label: To Reproduce
+      description: Steps to reproduce the behavior.
       placeholder: |
         1. Open '...'
         2. Select '...'
@@ -39,34 +51,25 @@ body:
     id: expected_behavior
     attributes:
       label: Expected behavior
-      description: What should have happened instead?
-      placeholder: Explain what you expected to happen.
-    validations:
-      required: true
-
-  - type: textarea
-    id: actual_behavior
-    attributes:
-      label: Actual behavior
-      description: What actually happened?
-      placeholder: Explain what happened instead.
+      description: A clear and concise description of what you expected to happen.
+      placeholder: Explain what you expected to see instead...
     validations:
       required: true
 
   - type: input
     id: app_version
     attributes:
-      label: App version
-      description: Find this in Novio settings or TestFlight.
-      placeholder: 1.0 (12)
+      label: App Version
+      description: Open the app settings to find it or TestFlight build details.
+      placeholder: v0.0.0
     validations:
       required: true
 
   - type: input
     id: device_info
     attributes:
-      label: Device info
-      description: Apple TV model or simulator type.
+      label: Device Info
+      description: Open the OS settings app to find which model you have.
       placeholder: Apple TV 4K (3rd generation)
     validations:
       required: true
@@ -74,37 +77,39 @@ body:
   - type: input
     id: os_version
     attributes:
-      label: tvOS version
-      description: Find this in Apple TV Settings.
+      label: OS Version
+      description: Open the OS settings app to find it or in some cases displayed in the app settings.
       placeholder: tvOS 18.4
     validations:
       required: true
 
   - type: input
+    id: player_info
+    attributes:
+      label: Player Info
+      description: Internal player used, if applicable.
+      placeholder: KSPlayer, AVPlayer, ...
+
+  - type: input
+    id: browser_info
+    attributes:
+      label: Browser Info
+      description: Open the about section of your browser to find the version.
+      placeholder: Chrome 142, Safari 18, ...
+
+  - type: input
     id: addon_info
     attributes:
-      label: Source / addon involved
+      label: Source / Addon Involved
       description: List the installed source or addon involved, if any.
       placeholder: Cinemeta, TMDB addon, Torrentio, none
-
-  - type: dropdown
-    id: playback_external
-    attributes:
-      label: If this is a playback issue, does the same media work elsewhere?
-      description: Optional, but useful for isolating source or player issues.
-      options:
-        - Not a playback issue
-        - Yes
-        - No
-    validations:
-      required: true
 
   - type: textarea
     id: screenshots
     attributes:
       label: Screenshots or videos
-      description: Add screenshots, screen recordings, or links if helpful.
-      placeholder: Drag and drop images after creating the issue, or paste links here.
+      description: If applicable, add screenshots to help explain your problem.
+      placeholder: Provide URLs or drag-and-drop images after creating the issue.
 
   - type: textarea
     id: logs
@@ -117,4 +122,4 @@ body:
     id: notes
     attributes:
       label: Notes
-      description: Any other details that may help reproduce or diagnose the issue.
+      description: Any additional information (optional)
