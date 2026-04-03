@@ -2,6 +2,12 @@
 
 Report bugs related to the Novio Apple TV / tvOS app here.
 
+Support site:
+- https://zeroq-bit.github.io/Novio-Bugs/
+
+Privacy policy:
+- https://zeroq-bit.github.io/Novio-Bugs/privacy.html
+
 Use Issues to report:
 - playback bugs
 - subtitle bugs
