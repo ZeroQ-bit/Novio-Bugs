@@ -1,0 +1,120 @@
+name: Bug report
+description: Report a bug in Novio
+body:
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Select the Novio platform you are using
+      options:
+        - Apple TV / tvOS
+        - Apple TV / tvOS TestFlight
+        - Apple TV Simulator
+    validations:
+      required: true
+
+  - type: textarea
+    id: describe_bug
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of the bug.
+      placeholder: Describe the issue in detail...
+    validations:
+      required: true
+
+  - type: textarea
+    id: to_reproduce
+    attributes:
+      label: To reproduce
+      description: Steps to reproduce the issue.
+      placeholder: |
+        1. Open '...'
+        2. Select '...'
+        3. Scroll to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected behavior
+      description: What should have happened instead?
+      placeholder: Explain what you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: Actual behavior
+      description: What actually happened?
+      placeholder: Explain what happened instead.
+    validations:
+      required: true
+
+  - type: input
+    id: app_version
+    attributes:
+      label: App version
+      description: Find this in Novio settings or TestFlight.
+      placeholder: 1.0 (12)
+    validations:
+      required: true
+
+  - type: input
+    id: device_info
+    attributes:
+      label: Device info
+      description: Apple TV model or simulator type.
+      placeholder: Apple TV 4K (3rd generation)
+    validations:
+      required: true
+
+  - type: input
+    id: os_version
+    attributes:
+      label: tvOS version
+      description: Find this in Apple TV Settings.
+      placeholder: tvOS 18.4
+    validations:
+      required: true
+
+  - type: input
+    id: addon_info
+    attributes:
+      label: Source / addon involved
+      description: List the installed source or addon involved, if any.
+      placeholder: Cinemeta, TMDB addon, Torrentio, none
+
+  - type: dropdown
+    id: playback_external
+    attributes:
+      label: If this is a playback issue, does the same media work elsewhere?
+      description: Optional, but useful for isolating source or player issues.
+      options:
+        - Not a playback issue
+        - Yes
+        - No
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or videos
+      description: Add screenshots, screen recordings, or links if helpful.
+      placeholder: Drag and drop images after creating the issue, or paste links here.
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Paste any relevant logs or error text here.
+      render: shell
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Any other details that may help reproduce or diagnose the issue.
