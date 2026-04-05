@@ -28,3 +28,11 @@ When opening a bug report, please include:
 - the installed source or addon involved
 - clear steps to reproduce
 - screenshots or video if available
+
+---
+
+## ☕ Support
+
+If StreamArr Pro is useful to you, consider supporting development:
+
+<a href="https://ko-fi.com/zeroq"><img src="https://www.ko-fi.com/img/githubbutton_sm.svg" alt="Support on Ko-fi"></a>
