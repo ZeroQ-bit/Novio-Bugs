@@ -31,7 +31,7 @@ When opening a bug report, please include:
 
 ---
 
-## ☕ Support
+## ☕ Donation
 
 If Novio Media Player is useful to you, consider supporting development:
 
