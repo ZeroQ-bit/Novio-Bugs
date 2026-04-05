@@ -33,6 +33,6 @@ When opening a bug report, please include:
 
 ## ☕ Support
 
-If StreamArr Pro is useful to you, consider supporting development:
+If Novio Media Player is useful to you, consider supporting development:
 
 <a href="https://ko-fi.com/zeroq"><img src="https://www.ko-fi.com/img/githubbutton_sm.svg" alt="Support on Ko-fi"></a>
