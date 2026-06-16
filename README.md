@@ -1,12 +1,12 @@
-# Novio Bugs
+# Vortexo Support
 
-Report bugs related to the Novio Apple TV / tvOS app here.
+Report bugs related to the Vortexo Apple TV / tvOS app here.
 
 Support site:
-- https://zeroq-bit.github.io/Novio-Bugs/
+- https://zeroq-bit.github.io/Vortexo-Bugs/
 
 Privacy policy:
-- https://zeroq-bit.github.io/Novio-Bugs/privacy.html
+- https://zeroq-bit.github.io/Vortexo-Bugs/privacy.html
 
 Use Issues to report:
 - playback bugs
@@ -22,7 +22,7 @@ Do not use this repository for:
 - account or billing questions
 
 When opening a bug report, please include:
-- Novio app version
+- Vortexo app version
 - Apple TV model
 - tvOS version
 - the installed source or addon involved
@@ -33,6 +33,6 @@ When opening a bug report, please include:
 
 ## ☕ Donation
 
-If Novio Media Player is useful to you, consider supporting development:
+If Vortexo is useful to you, consider supporting development:
 
 <a href="https://ko-fi.com/zeroq"><img src="https://www.ko-fi.com/img/githubbutton_sm.svg" alt="Support on Ko-fi"></a>

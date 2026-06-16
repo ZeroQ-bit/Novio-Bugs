@@ -1,11 +1,11 @@
 name: Bug report
-description: Report a bug in Novio
+description: Report a bug in Vortexo
 body:
   - type: dropdown
     id: platform
     attributes:
-      label: Novio Platform
-      description: Select the Novio platform you are using
+      label: Vortexo Platform
+      description: Select the Vortexo platform you are using
       options:
         - Apple TV / tvOS
         - Apple TV / tvOS TestFlight
